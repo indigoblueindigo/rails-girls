@@ -14,7 +14,7 @@
   <strong>Picture:</strong>
 
 <%= image_tag(@idea.picture_url, width: 100) if @idea.picture.present? %>
-</p>
+<%= image_tag(@idea.picture2_url, width: 100) if @idea.picture2.present? %>
 
 <%= link_to 'Edit', edit_idea_path(@idea) %> |
 <%= link_to 'Back', ideas_path %>
